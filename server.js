@@ -1,18 +1,17 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const routes = require("./routes/quiz.routes");
-const bodyParser = require("body-parser");
+const routes = require("./routes/store.routes");
 require("dotenv").config();
 const urlDB = process.env.URLDB;
 const PORT = process.env.PORT || 5000;
 
+app.use(express.json());
 app.use(
-  bodyParser.urlencoded({
+  express.urlencoded({
     extended: true,
   })
 );
-app.use(bodyParser.json());
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -37,7 +36,7 @@ app.get("/", (req, res) => {
   res.send("api working");
 });
 
-app.use("/quizzes", routes);
+app.use("/stores", routes);
 
 app.listen(PORT, () => {
   console.log(`working at ${PORT}`);

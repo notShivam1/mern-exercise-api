@@ -5,18 +5,18 @@ const StoreSchema = new mongoose.Schema({
   uId: { type: String, default: shortid.generate() },
   createdAt: { type: String, default: Date.now() },
   googleId: { type: String },
-  name: { type: String },
+  storeName: { type: String },
   email: { type: String },
-  contactNumber: {
+  mobileNumber: {
     type: String,
   },
   city: { type: String },
   state: { type: String },
-  pincode: { type: String },
-  address: {
+  pinCode: { type: String },
+  customerCode: {
     type: String,
   },
-  customerCode: {
+  storeAddress: {
     type: String,
   },
 });

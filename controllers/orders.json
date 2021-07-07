@@ -1,0 +1,26 @@
+[
+  {
+    "orderNumber": "001",
+    "orderDueDate": "12-07",
+    "customerBuyerName": "shivam",
+    "customerAddress": "B5T, rohini",
+    "customerPhone": "8826278",
+    "orderTotal": "345"
+  },
+  {
+    "orderNumber": "002",
+    "orderDueDate": "23-08",
+    "customerBuyerName": "mahavir",
+    "customerAddress": "mahavir apartment",
+    "customerPhone": "7786767",
+    "orderTotal": "900"
+  },
+  {
+    "orderNumber": "003",
+    "orderDueDate": "jnjn",
+    "customerBuyerName": "jnj",
+    "customerAddress": "nljn",
+    "customerPhone": "ljnl",
+    "orderTotal": "lnl"
+  }
+]

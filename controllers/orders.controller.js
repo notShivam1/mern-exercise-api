@@ -9,7 +9,6 @@ function getOrders(req, res) {
 }
 
 function createOrder(req, res) {
-  console.log(req.body);
   if (!req.body) {
     return res.status(404).json({ message: "could not add order" });
   }
@@ -21,9 +20,7 @@ function createOrder(req, res) {
 function updateOrder(req, res) {
   const { orderNumber } = req.body;
   const index = orders.findIndex((o) => o.orderNumber == orderNumber);
-  console.log(orderNumber, req.body);
   if (index === -1) {
-    console.log("yo");
     return res.status(404).json({ message: "could not update order" });
   }
   let newObj = req.body;
